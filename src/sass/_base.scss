@@ -1,0 +1,452 @@
+:root {
+  --color-primary: #0b7a38;
+  --color-primary-shade: #0a6e32;
+  --color-primary-tint: #cee4d7;
+
+  --color-grey-light-1: #f0eeee;
+  --color-grey-light-2: #ccc;
+
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+}
+
+$bp-largest: 75em;
+$bp-large: 62.5em;
+$bp-medium: 56.25em;
+$bp-small: 42em;
+$bp-smallest: 32.25em;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline-color: var(--color-primary);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-1);
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(11, 122, 55, 0.3)
+    ),
+    url(../img/hero-img.jpg);
+  filter: brightness(0.8);
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(100% 0, 100% 100%, 70% 100%, 50% 80%, 50% 40%, 70% 0%);
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
+}
+
+.container {
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.btn {
+  &,
+  &:visited,
+  &:link {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.2rem 3.2rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-left: 0.6rem;
+    vertical-align: middle;
+    fill: currentColor;
+  }
+}
+
+.btn-primary {
+  &,
+  &:visited,
+  &:link {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+
+  &:active,
+  &:hover {
+    background-color: var(--color-primary-shade);
+    border: 2px solid var(--color-primary-shade);
+  }
+}
+
+.btn-black {
+  &,
+  &:visited,
+  &:link {
+    background-color: var(--color-grey-dark-1);
+    border: 2px solid var(--color-grey-dark-1);
+  }
+
+  &:active,
+  &:hover {
+    background-color: #fff;
+    color: var(--color-grey-dark-1);
+    border: 2px solid var(--color-grey-dark-1);
+  }
+}
+
+.no-shadow {
+  &,
+  &:link,
+  &:visited {
+    box-shadow: none;
+  }
+
+  &,
+  &:hover,
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.error,
+.book-done {
+  display: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1rem 1.4rem;
+  border-radius: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.error {
+  background-color: #ffc9c9;
+  color: #c92a2a;
+}
+
+.book-done {
+  background-color: #b2f2bb;
+  color: #2b8a3e;
+}
+
+.icon {
+  width: 8rem;
+  height: 8rem;
+  fill: var(--color-primary);
+  margin-bottom: 2.4rem;
+
+  background-color: var(--color-primary-tint);
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+.max--width {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7.5rem;
+  // background-color: var(--color-grey-dark-1);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(51, 51, 51, 0.7),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url(../img/bike6.jpg);
+  background-size: cover;
+  background-position: 50% 35%;
+  filter: brightness(0.75);
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 2.4rem;
+  height: 30rem;
+
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3rem;
+    height: 25rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 2.4rem;
+    height: 20rem;
+  }
+
+  a {
+    &:link,
+    &:visited {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      margin-left: 6rem;
+      color: var(--color-primary);
+      text-decoration: none;
+      transition: all 0.2s;
+      cursor: pointer;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-left: 0;
+      }
+    }
+
+    &:hover,
+    &:active {
+      color: var(--color-primary-shade);
+    }
+  }
+
+  &__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: currentColor;
+  }
+}
+
+.header--container {
+  height: 35rem;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.85)
+    ),
+    url(../img/hero-img.jpg);
+  background-size: cover;
+  background-position: 50% 70%;
+}
+
+.info {
+  &:link,
+  &:visited {
+    display: block;
+    font-weight: 600;
+    color: var(--color-grey-dark-1);
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  &:hover,
+  &:active {
+    color: var(--color-primary);
+  }
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: currentColor;
+    vertical-align: middle;
+    margin-right: 0.8rem;
+  }
+}
+
+// MODAL
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  max-width: 80rem;
+  height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 1.5rem 4rem rgb(0, 0, 0, 0.2);
+  z-index: 1000;
+  overflow-y: scroll;
+  transition: all 0.5s;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 1.2rem;
+  }
+
+  &__heading {
+    &--1 {
+      font-size: 3.2rem;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    &--2 {
+      font-size: 2.2rem;
+      color: var(--color-primary);
+      margin-bottom: 1.6rem;
+    }
+    &--3 {
+      font-size: 2.2rem;
+      padding: 2.4rem 3.2rem 0 3.2rem;
+    }
+  }
+
+  &__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: #fff;
+    cursor: pointer;
+  }
+
+  &__text--box {
+    background-color: var(--color-primary-tint);
+    padding: 1.6rem 3.2rem;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    color: var(--color-grey-dark-2);
+  }
+
+  &__infos {
+    padding: 2.4rem 3.2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23.73rem, 1fr));
+    gap: 2.4rem;
+    border-bottom: 1px solid var(--color-grey-dark-2);
+    &--details,
+    &--image {
+      display: flex;
+      flex-direction: column;
+      @media only screen and (max-width: $bp-medium) {
+        align-items: center;
+      }
+      gap: 2.4rem;
+    }
+  }
+
+  &__info--box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  &__info {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  &__img {
+    width: 90%;
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__form {
+    padding: 2.4rem 3.2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
+    column-gap: 2.4rem;
+    row-gap: 3.2rem;
+    &--label {
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: var(--color-grey-dark-2);
+    }
+    &--input {
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      width: 100%;
+      padding: 1.2rem 2.4rem;
+      border: none;
+      background-color: var(--color-primary-tint);
+    }
+    &--email,
+    &--address {
+      grid-column: 1 / span 2;
+
+      @media only screen and (max-width: $bp-medium) {
+        grid-column: 1;
+      }
+    }
+  }
+
+  &__checkbox {
+    &--text {
+      font-size: 1.8rem;
+      margin-left: 1rem;
+    }
+  }
+
+  &__btn--box {
+    padding: 2.4rem 3.2rem;
+    background-color: var(--color-primary-tint);
+    display: flex;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 200;
+  transition: all 0.5s;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}

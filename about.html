@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="src/img/favicon.png" />
+    <script type="module" src="src/js/controller.js"></script>
+    <title>Ecorental || rent a bike</title>
+  </head>
+  <body>
+    <div class="header--container">
+      <header class="header container" id="header">
+        <img
+          src="/src/img/logo.png"
+          alt="Logo of Ecorental"
+          class="header__logo"
+        />
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="index.html" class="header__nav-link">Home</a></li>
+            <li>
+              <a href="#header" class="header__nav-link smooth--scroll"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="index.html#section--bikes" class="header__nav-link"
+                >Bikes Models</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#section--testimonials"
+                class="header__nav-link"
+                >Testimonials</a
+              >
+            </li>
+            <li><a href="team.html" class="header__nav-link">Our Team</a></li>
+            <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__btn-box">
+          <a href="#" class="header__nav-link">Sign In</a>
+          <a href="#" class="btn btn-primary">Register</a>
+        </div>
+        <div class="header__menu">
+          <svg class="header__icon header__icon--open">
+            <use xlink:href="src/img/sprite.svg#icon-menu"></use>
+          </svg>
+          <svg class="header__icon header__icon--close">
+            <use xlink:href="src/img/sprite.svg#icon-cross"></use>
+          </svg>
+        </div>
+      </header>
+      <div class="container">
+        <h3 class="heading__h3 mb-small mt-large">About</h3>
+        <h2 class="heading__h2">
+          <a href="index.html" class="header__nav-link">Home</a> / About
+        </h2>
+      </div>
+    </div>
+
+    <section class="section--about">
+      <div class="about">
+        <img src="src/img/company.jpg" alt="company team" class="about__img" />
+        <div class="about__infos">
+          <h2 class="heading__h2 mb-medium">About Company</h2>
+          <h3 class="heading__h3 mb-large">Our vision</h3>
+          <p class="text">
+            At Ecorental, we are passionate about cycling and dedicated to
+            providing exceptional bike rental services. Whether you're a
+            seasoned rider or a first-time explorer, we strive to make your
+            biking experience unforgettable. With a diverse fleet of
+            high-quality bikes, we offer options for every type of adventure,
+            from mountain trails to urban streets. Our knowledgeable staff is
+            here to assist you, offering expert guidance and personalized
+            recommendations to ensure you find the perfect ride. Trust us to
+            provide reliable, well-maintained bikes that deliver comfort,
+            performance, and the freedom to explore the world on two wheels.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--how container">
+      <h2 class="heading__h2 mb-small">plan your trip now</h2>
+      <h3 class="heading__h3 mb-large">Quick & easy bike rental</h3>
+      <div class="guides">
+        <div class="guide">
+          <svg class="icon">
+            <use xlink:href="src/img/sprite.svg#icon-sphere"></use>
+          </svg>
+          <h4 class="heading__h4 mb-small">Browse and Select</h4>
+          <p class="guide__text">
+            Explore our wide range of bikes available for rent. Browse through
+            the options and select the one that suits your preference.
+          </p>
+        </div>
+        <div class="guide">
+          <svg class="icon">
+            <use xlink:href="src/img/sprite.svg#icon-cloud-check"></use>
+          </svg>
+          <h4 class="heading__h4 mb-small">Confirmation</h4>
+          <p class="guide__text">
+            After submitting your reservation, you will receive a confirmation
+            email with all the necessary details.
+          </p>
+        </div>
+        <div class="guide">
+          <svg class="icon">
+            <use xlink:href="src/img/sprite.svg#icon-location"></use>
+          </svg>
+          <h4 class="heading__h4 mb-small">Pick Up and Enjoy</h4>
+          <p class="guide__text">
+            On the designated date and time, visit the designated pickup
+            location to collect your rented bike. Our friendly staff will assist
+            you.
+          </p>
+        </div>
+        <div class="guide">
+          <svg class="icon">
+            <use xlink:href="src/img/sprite.svg#icon-credit-card"></use>
+          </svg>
+          <h4 class="heading__h4 mb-small">Payment</h4>
+          <p class="guide__text">
+            You will be provided with the final invoice including any additional
+            charges (if applicable) such as late fees or damages.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      Book a bike by getting touch with us
+      <a href="tel:123-456-789">
+        <svg class="cta__icon">
+          <use xlink:href="src/img/sprite.svg#icon-phone"></use>
+        </svg>
+        (123)-456-789</a
+      >
+    </div>
+
+    <footer class="footer container">
+      <div>
+        <h4 class="heading__h4 mb-small">BIKE Rental</h4>
+        <p class="text mb-large">
+          Embrace the freedom of two wheels. Discover new horizons with us. Your
+          unforgettable cycling adventure starts here.
+        </p>
+        <a href="tel:123-456-789" class="info mb-small">
+          <svg class="info__icon">
+            <use xlink:href="src/img/sprite.svg#icon-phone"></use>
+          </svg>
+          (123)-456-789
+        </a>
+        <a href="mailto:ecorental@gmail.com" class="info">
+          <svg class="info__icon">
+            <use xlink:href="src/img/sprite.svg#icon-mail"></use>
+          </svg>
+          ecorental@gmail.com
+        </a>
+      </div>
+      <div>
+        <h4 class="heading__h4 mb-small">COMPANY</h4>
+        <ul class="footer__nav">
+          <li><a href="#header" class="footer__link">Athens</a></li>
+          <li><a href="#header" class="footer__link">Careers</a></li>
+          <li><a href="#header" class="footer__link">Mobile</a></li>
+          <li><a href="#header" class="footer__link">Blog</a></li>
+          <li><a href="#header" class="footer__link">How we work</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="heading__h4 mb-small">WORKING HOURS</h4>
+        <ul class="footer__list">
+          <li>Mon - Fri: 9:00 AM - 9:00PM</li>
+          <li>Sat: 9:00 AM - 7:00PM</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="heading__h4 mb-small">SUBSCRIPTION</h4>
+        <span class="footer__text"
+          >Subscribe your Email address for latest news & updates.</span
+        >
+        <input
+          class="footer__input"
+          type="email"
+          placeholder="Enter Email Address"
+        />
+        <button class="btn btn-primary no-radius footer__btn">Submit</button>
+      </div>
+    </footer>
+  </body>
+</html>

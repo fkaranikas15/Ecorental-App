@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="src/img/favicon.png" />
+    <script type="module" src="src/js/controller.js"></script>
+    <title>Ecorental || rent a bike</title>
+  </head>
+  <body>
+    <div class="hero-img">&nbsp;</div>
+    <header class="header container" id="header">
+      <img
+        src="/src/img/logo.png"
+        alt="Logo of Ecorental"
+        class="header__logo"
+      />
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li>
+            <a href="#header" class="header__nav-link smooth--scroll">Home</a>
+          </li>
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li>
+            <a href="#section--bikes" class="header__nav-link smooth--scroll"
+              >Bikes Models</a
+            >
+          </li>
+          <li>
+            <a
+              href="#section--testimonials"
+              class="header__nav-link smooth--scroll"
+              >Testimonials</a
+            >
+          </li>
+          <li><a href="team.html" class="header__nav-link">Our Team</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header__btn-box">
+        <a href="#" class="header__nav-link">Sign In</a>
+        <a href="#" class="btn btn-primary">Register</a>
+      </div>
+      <div class="header__menu">
+        <svg class="header__icon header__icon--open">
+          <use xlink:href="src/img/sprite.svg#icon-menu"></use>
+        </svg>
+        <svg class="header__icon header__icon--close">
+          <use xlink:href="src/img/sprite.svg#icon-cross"></use>
+        </svg>
+      </div>
+    </header>
+    <section class="section--hero container">
+      <div class="hero">
+        <h2 class="heading__h2 mb-small">Rent Your Wheels of Adventure</h2>
+        <h1 class="heading__h1 mb-large">
+          Go <span class="primary-color">Green</span>: Rent and Ride Responsibly
+        </h1>
+        <p class="text mb-large">
+          Unleash your adventurous spirit. Rent a bike and explore the world on
+          two wheels. Discover scenic routes, experience urban thrills, and
+          create unforgettable memories.
+        </p>
+        <div class="customer">
+          <div class="customer__box">
+            <img
+              src="src/img/customer1.jpg"
+              alt="customer 1"
+              class="customer__img"
+            />
+            <img
+              src="src/img/customer2.jpg"
+              alt="customer 2"
+              class="customer__img"
+            />
+            <img
+              src="src/img/customer3.jpg"
+              alt="customer 3"
+              class="customer__img"
+            />
+            <img
+              src="src/img/customer4.jpg"
+              alt="customer 4"
+              class="customer__img"
+            />
+            <img
+              src="src/img/customer5.jpg"
+              alt="customer 5"
+              class="customer__img"
+            />
+          </div>
+          <span class="customer__text"
+            ><span class="primary-color text-bold">4.000+</span> people talk
+            about us</span
+          >
+        </div>
+        <div class="hero__btn-box">
+          <button class="btn btn-primary no-shadow btn--scroll-to">
+            Book Ride
+            <svg class="btn__icon">
+              <use xlink:href="src/img/sprite.svg#icon-new-message"></use>
+            </svg>
+          </button>
+          <a href="#" class="btn btn-black"
+            >Learn More
+            <svg class="btn__icon">
+              <use
+                xlink:href="src/img/sprite.svg#icon-chevron-thin-right"
+              ></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="book--form container" id="section--form">
+      <h2 class="heading__h2 mb-medium">book a bike</h2>
+      <p class="error">All fields required!</p>
+      <p class="book-done">Check your email to confirm the order!</p>
+      <form class="form">
+        <div class="form__item">
+          <div class="form__text-box">
+            <svg class="form__icon">
+              <use xlink:href="src/img/sprite.svg#icon-checkbox-checked"></use>
+            </svg>
+            <label for="select" class="form__label"
+              >Select Your Bike Type <span class="primary-color">*</span></label
+            >
+          </div>
+          <select id="select" class="form__select form__input">
+            <option value="">Select your car type</option>
+            <option value="street">Street Bike</option>
+            <option value="mountain">Mountain Bike</option>
+            <option value="electric">Electric Bike</option>
+            <option value="bmx">BMX</option>
+            <option value="racing">Racing Bike</option>
+          </select>
+        </div>
+        <div class="form__item">
+          <div class="form__text-box">
+            <svg class="form__icon">
+              <use xlink:href="src/img/sprite.svg#icon-location"></use>
+            </svg>
+            <label for="pick" class="form__label"
+              >Pick-up <span class="primary-color">*</span></label
+            >
+          </div>
+
+          <select id="pick" class="form__select form__input">
+            <option value="">Select pick-up location</option>
+            <option>Athens</option>
+            <option>Napoli</option>
+            <option>Berlin</option>
+            <option>London</option>
+            <option>Paris</option>
+          </select>
+        </div>
+        <div class="form__item">
+          <div class="form__text-box">
+            <svg class="form__icon">
+              <use xlink:href="src/img/sprite.svg#icon-location"></use>
+            </svg>
+            <label for="drop" class="form__label"
+              >Drop-of <span class="primary-color">*</span></label
+            >
+          </div>
+
+          <select id="drop" class="form__select form__input">
+            <option value="">Select drop-of location</option>
+            <option>Athens</option>
+            <option>Napoli</option>
+            <option>Berlin</option>
+            <option>London</option>
+            <option>Paris</option>
+          </select>
+        </div>
+        <div class="form__item">
+          <div class="form__text-box">
+            <svg class="form__icon">
+              <use xlink:href="src/img/sprite.svg#icon-calendar"></use>
+            </svg>
+            <label for="picktime" class="form__label"
+              >Pick-up <span class="primary-color">*</span></label
+            >
+          </div>
+
+          <input
+            type="date"
+            class="form__date form__input"
+            id="picktime"
+            placeholder="mm / dd / yyyy"
+          />
+        </div>
+        <div class="form__item">
+          <div class="form__text-box">
+            <svg class="form__icon">
+              <use xlink:href="src/img/sprite.svg#icon-calendar"></use>
+            </svg>
+            <label for="droptime" class="form__label"
+              >Drop-of <span class="primary-color">*</span></label
+            >
+          </div>
+
+          <input
+            type="date"
+            class="form__date form__input"
+            id="droptime"
+            placeholder="mm / dd / yyyy"
+          />
+        </div>
+        <button class="btn btn-primary form__btn">Search</button>
+      </form>
+    </section>
+
+    <section class="section--how container">
+      <h2 class="heading__h2 mb-small">plan your trip now</h2>
+      <h3 class="heading__h3 mb-large">Quick & easy bike rental</h3>
+      <div class="guides">
+        <div class="guide">
+          <svg class="icon">
+            <use xlink:href="src/img/sprite.svg#icon-sphere"></use>
+          </svg>
+          <h4 class="heading__h4 mb-small">Browse and Select</h4>
+          <p class="guide__text">
+            Explore our wide range of bikes available for rent. Browse through
+            the options and select the one that suits your preference.
+          </p>
+        </div>
+        <div class="guide">
+          <svg class="icon">
+            <use xlink:href="src/img/sprite.svg#icon-cloud-check"></use>
+          </svg>
+          <h4 class="heading__h4 mb-small">Confirmation</h4>
+          <p class="guide__text">
+            After submitting your reservation, you will receive a confirmation
+            email with all the necessary details.
+          </p>
+        </div>
+        <div class="guide">
+          <svg class="icon">
+            <use xlink:href="src/img/sprite.svg#icon-location"></use>
+          </svg>
+          <h4 class="heading__h4 mb-small">Pick Up and Enjoy</h4>
+          <p class="guide__text">
+            On the designated date and time, visit the designated pickup
+            location to collect your rented bike. Our friendly staff will assist
+            you.
+          </p>
+        </div>
+        <div class="guide">
+          <svg class="icon">
+            <use xlink:href="src/img/sprite.svg#icon-credit-card"></use>
+          </svg>
+          <h4 class="heading__h4 mb-small">Payment</h4>
+          <p class="guide__text">
+            You will be provided with the final invoice including any additional
+            charges (if applicable) such as late fees or damages.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--bikes container" id="section--bikes">
+      <h2 class="heading__h2 mb-small">bike models</h2>
+      <h3 class="heading__h3 mb-small">Our rental fleet</h3>
+      <p class="text mb-large">
+        Choose from a variety of our amazing bikes to rent for your next
+        adventure
+      </p>
+      <div class="border">
+        <div class="border__models">
+          <button class="border__btn active" data-number="0">
+            Street Bike
+          </button>
+          <button class="border__btn" data-number="1">Mountain Bike</button>
+          <button class="border__btn" data-number="2">Electric Bike</button>
+          <button class="border__btn" data-number="3">BMX Bike</button>
+          <button class="border__btn" data-number="4">Racing Bike</button>
+        </div>
+        <div class="border__box">
+          <img
+            src="src/img/bike1.png"
+            alt="bike"
+            class="border__img border__img--active"
+          />
+          <img src="src/img/bike2.png" alt="bike" class="border__img" />
+          <img src="src/img/bike3.png" alt="bike" class="border__img" />
+          <img src="src/img/bike4.png" alt="bike" class="border__img" />
+          <img src="src/img/bike5.png" alt="bike" class="border__img" />
+          <div class="border__price-box">
+            <div class="border__price">
+              <span class="border__price-price">$4</span>
+              <span class="border__price-text">/ rent per day</span>
+            </div>
+            <div class="border__detail">
+              <span class="border__detail-border">Model</span>
+              <span class="model">Street</span>
+            </div>
+            <div class="border__detail">
+              <span class="border__detail-border">Year</span>
+              <span class="year">2020</span>
+            </div>
+            <div class="border__detail">
+              <span class="border__detail-border">Size</span>
+              <span class="size">Large</span>
+            </div>
+            <div class="border__detail">
+              <span class="border__detail-border">Wheels Size</span>
+              <span class="wheels">26</span>
+            </div>
+            <div class="border__detail">
+              <span class="border__detail-border">Gears</span>
+              <span class="gear">Multiple</span>
+            </div>
+            <button class="btn btn-primary no-radius btn--scroll-to">
+              Reserve Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      Book a bike by getting touch with us
+      <a href="tel:123-456-789">
+        <svg class="cta__icon">
+          <use xlink:href="src/img/sprite.svg#icon-phone"></use>
+        </svg>
+        (123)-456-789</a
+      >
+    </div>
+
+    <section class="section--benefits container">
+      <div class="infos">
+        <h2 class="heading__h2 mb-small">Why choose us</h2>
+        <h3 class="heading__h3 mb-small">
+          Best valued deals you will ever find
+        </h3>
+        <p class="text mb-large">
+          Choose us for a superior bike rental experience. With a wide selection
+          of high-quality bikes, a commitment to sustainability, and a focus on
+          your safety and comfort, we provide the perfect ride for every
+          adventure. Discover the freedom and joy of exploring on two wheels
+          with our reliable and eco-friendly rentals. Join us for unforgettable
+          journeys, where each pedal takes you closer to new horizons.
+        </p>
+        <a href="#" class="btn btn-primary"
+          >Find Details
+          <svg class="btn__icon">
+            <use xlink:href="src/img/sprite.svg#icon-chevron-thin-right"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="benefits">
+        <div class="benefit">
+          <svg class="icon">
+            <use xlink:href="src/img/sprite.svg#icon-bubbles2"></use>
+          </svg>
+          <div class="benefit__details">
+            <h4 class="heading__h4 mb-small">Expertly Guided</h4>
+            <p class="text">
+              Our knowledgeable staff enhances your experience with personalized
+              service, helping you choose the ideal bike for your uses.
+            </p>
+          </div>
+        </div>
+        <div class="benefit">
+          <svg class="icon">
+            <use xlink:href="src/img/sprite.svg#icon-shield"></use>
+          </svg>
+          <div class="benefit__details">
+            <h4 class="heading__h4 mb-small">Quality and Safety</h4>
+            <p class="text">
+              Our well-maintained bikes guarantee a worry-free ride,
+              prioritizing your safety and peace of mind.
+            </p>
+          </div>
+        </div>
+        <div class="benefit">
+          <svg class="icon">
+            <use xlink:href="src/img/sprite.svg#icon-users"></use>
+          </svg>
+          <div class="benefit__details">
+            <h4 class="heading__h4 mb-small">Proven Satisfaction</h4>
+            <p class="text">
+              With a vast collection of 4000+ testimonials, our track record
+              speaks for itself. asdfsaffasdf
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section--testimonials container" id="section--testimonials">
+      <h2 class="heading__h2 mb-small">reviewed by people</h2>
+      <h3 class="heading__h3 mb-medium">Client's Testimonials</h3>
+      <p class="text mb-large max--width">
+        Discover the positive impact we've made on the our clients by reading
+        through their testimonials. Our clients have experienced our service and
+        results, and they're eager to share their positive experiences with you.
+      </p>
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Friendly Staff and Well-Maintained Bikes!
+            </h5>
+            <blockquote class="testimonial__text">
+              Renting a bike from this company was an absolute breeze! The staff
+              was friendly and helpful, guiding me to the perfect bike for my
+              adventure. The bike itself was in excellent condition, and I had a
+              smooth and enjoyable ride. I highly recommend their service!
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="src/img/customer1.jpg"
+                alt="customer"
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Maximilian</h6>
+              <p class="testimonial__location">Berlin, Germany</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Exceptional Service and Expert Guidance!
+            </h5>
+            <blockquote class="testimonial__text">
+              I had an incredible experience with this bike rental company. The
+              team went above and beyond to ensure I had everything I needed,
+              from providing a well-maintained bike to suggesting scenic routes
+              in the area. Their professionalism and attention to detail
+              exceeded my expectations.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="src/img/customer2.jpg"
+                alt="customer"
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Lorenzo Miles</h6>
+              <p class="testimonial__location">Milan, Italy</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Knowledgeable Staff and High-Performance Bikes!
+            </h5>
+            <blockquote class="testimonial__text">
+              I can't say enough positive things about my bike rental
+              experience. The staff was incredibly knowledgeable and friendly,
+              helping me select the ideal bike for my skill level and terrain.
+              The bike itself performed flawlessly, and I had a fantastic time
+              exploring the trails.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="src/img/customer3.jpg"
+                alt="customer"
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Luisa Ryane</h6>
+              <p class="testimonial__location">Lisbon, Portugal</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+      </div>
+    </section>
+
+    <section class="section--faq">
+      <h2 class="heading__h2 mb-small">faq</h2>
+      <h3 class="heading__h3 mb-medium">Frequently Asked Questions</h3>
+      <p class="text mb-large max--width">
+        Frequently Asked Questions About the Bike Rental Booking Process on Our
+        Website: Answers to Common Concerns and Inquiries.
+      </p>
+      <div class="shadow">
+        <div class="faq faq__active">
+          <div class="faq__box">
+            <span class="faq__question"
+              >1. How do I make a reservation for a bike rental?</span
+            >
+            <svg class="faq__icon faq__icon--close">
+              <use xlink:href="src/img/sprite.svg#icon-chevron-thin-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon--open">
+              <use xlink:href="src/img/sprite.svg#icon-chevron-thin-up"></use>
+            </svg>
+          </div>
+          <div class="faq__answer">
+            Making a reservation is quick and easy. Simply visit our website or
+            give us a call to check bike availability for your desired dates.
+            You can then proceed to book online or provide the necessary details
+            over the phone. Our team will confirm your reservation and ensure
+            the bike is ready for your adventure.
+          </div>
+        </div>
+        <div class="faq">
+          <div class="faq__box">
+            <span class="faq__question"
+              >2. What if I have a mechanical issue with the bike?</span
+            >
+            <svg class="faq__icon faq__icon--close">
+              <use xlink:href="src/img/sprite.svg#icon-chevron-thin-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon--open">
+              <use xlink:href="src/img/sprite.svg#icon-chevron-thin-up"></use>
+            </svg>
+          </div>
+          <div class="faq__answer">
+            In the unlikely event of a mechanical issue, please contact us
+            immediately. Our team will provide you with instructions on how to
+            proceed. Depending on the situation, we may arrange for a
+            replacement bike or offer on-site assistance to resolve the issue
+            promptly, ensuring your ride continues smoothly.
+          </div>
+        </div>
+        <div class="faq">
+          <div class="faq__box">
+            <span class="faq__question"
+              >3. Can I rent bike accessories such as helmets, locks, or
+              baskets?</span
+            >
+            <svg class="faq__icon faq__icon--close">
+              <use xlink:href="src/img/sprite.svg#icon-chevron-thin-down"></use>
+            </svg>
+            <svg class="faq__icon faq__icon--open">
+              <use xlink:href="src/img/sprite.svg#icon-chevron-thin-up"></use>
+            </svg>
+          </div>
+          <div class="faq__answer">
+            Absolutely! We offer a range of bike accessories available for rent
+            to enhance your cycling experience. These include helmets for
+            safety, locks to secure the bike, and baskets or racks for carrying
+            personal belongings. Simply let us know your accessory requirements
+            during the reservation process, and we'll ensure they are ready for
+            you along with your bike.
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer container">
+      <div>
+        <h4 class="heading__h4 mb-small">BIKE Rental</h4>
+        <p class="text mb-large">
+          Embrace the freedom of two wheels. Discover new horizons with us. Your
+          unforgettable cycling adventure starts here.
+        </p>
+        <a href="tel:123-456-789" class="info mb-small">
+          <svg class="info__icon">
+            <use xlink:href="src/img/sprite.svg#icon-phone"></use>
+          </svg>
+          (123)-456-789
+        </a>
+        <a href="mailto:ecorental@gmail.com" class="info">
+          <svg class="info__icon">
+            <use xlink:href="src/img/sprite.svg#icon-mail"></use>
+          </svg>
+          ecorental@gmail.com
+        </a>
+      </div>
+      <div>
+        <h4 class="heading__h4 mb-small">COMPANY</h4>
+        <ul class="footer__nav">
+          <li><a href="#header" class="footer__link">Athens</a></li>
+          <li><a href="#header" class="footer__link">Careers</a></li>
+          <li><a href="#header" class="footer__link">Mobile</a></li>
+          <li><a href="#header" class="footer__link">Blog</a></li>
+          <li><a href="#header" class="footer__link">How we work</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="heading__h4 mb-small">WORKING HOURS</h4>
+        <ul class="footer__list">
+          <li>Mon - Fri: 9:00 AM - 9:00PM</li>
+          <li>Sat: 9:00 AM - 7:00PM</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="heading__h4 mb-small">SUBSCRIPTION</h4>
+        <span class="footer__text"
+          >Subscribe your Email address for latest news & updates.</span
+        >
+        <input
+          class="footer__input"
+          type="email"
+          placeholder="Enter Email Address"
+        />
+        <button class="btn btn-primary no-radius footer__btn">Submit</button>
+      </div>
+    </footer>
+
+    <div class="modal hidden">
+      <div class="modal__header">
+        <h2 class="modal__heading--1">complete reservation</h2>
+        <svg class="modal__icon modal__close--btn">
+          <use xlink:href="src/img/sprite.svg#icon-cross"></use>
+        </svg>
+      </div>
+      <div class="modal__text--box">
+        <h3 class="modal__heading--2">
+          Upon completing this reservation enquiry, you will receive:
+        </h3>
+        <p class="modal__text">
+          Your rental voucher to produce on arrival at the rental desk and a
+          toll-free customer support number.
+        </p>
+      </div>
+      <div class="modal__infos">
+        <div class="modal__infos--details">
+          <h3 class="modal__heading--2">Location & Date</h3>
+          <div class="modal__info--box">
+            <span class="modal__info">
+              <svg class="info__icon primary-color">
+                <use xlink:href="src/img/sprite.svg#icon-calendar"></use>
+              </svg>
+              Pick-Up Date
+            </span>
+            <span class="text pick--date">2002-12-31</span>
+          </div>
+          <div class="modal__info--box">
+            <span class="modal__info">
+              <svg class="info__icon primary-color">
+                <use xlink:href="src/img/sprite.svg#icon-calendar"></use>
+              </svg>
+              Drop-Off Date
+            </span>
+            <span class="text drop--date">2003-01-11</span>
+          </div>
+          <div class="modal__info--box">
+            <span class="modal__info">
+              <svg class="info__icon primary-color">
+                <use xlink:href="src/img/sprite.svg#icon-location"></use>
+              </svg>
+              Pick-Up Location
+            </span>
+            <span class="text pick--location">Athens</span>
+          </div>
+          <div class="modal__info--box">
+            <span class="modal__info">
+              <svg class="info__icon primary-color">
+                <use xlink:href="src/img/sprite.svg#icon-location"></use>
+              </svg>
+              Drop-Off Location
+            </span>
+            <span class="text drop--location">Athens</span>
+          </div>
+        </div>
+        <div class="modal__infos--image">
+          <h3 class="modal__heading--2">
+            Bike - <span class="name">Mountain </span>
+          </h3>
+          <img
+            src="src/img/bike1.png"
+            alt="bike"
+            class="modal__img modal__img--street"
+          />
+          <img
+            src="src/img/bike2.png"
+            alt="bike"
+            class="modal__img modal__img--mountain"
+          />
+          <img
+            src="src/img/bike3.png"
+            alt="bike"
+            class="modal__img modal__img--electric"
+          />
+          <img
+            src="src/img/bike4.png"
+            alt="bike"
+            class="modal__img modal__img--bmx"
+          />
+          <img
+            src="src/img/bike5.png"
+            alt="bike"
+            class="modal__img modal__img--racing"
+          />
+        </div>
+      </div>
+      <h2 class="heading__h2 primary-color modal__heading--3">
+        Personal information
+      </h2>
+      <form action="#section--form" class="modal__form">
+        <div>
+          <label for="firstname" class="modal__form--label"
+            >First Name <span class="primary-color">*</span></label
+          >
+          <input
+            id="firstname"
+            type="text"
+            class="modal__form--input"
+            required
+            placeholder="Enter your first name"
+          />
+        </div>
+        <div>
+          <label for="lastname" class="modal__form--label"
+            >Last Name <span class="primary-color">*</span></label
+          >
+          <input
+            id="lastname"
+            type="text"
+            class="modal__form--input"
+            required
+            placeholder="Enter your last name"
+          />
+        </div>
+        <div>
+          <label for="phone" class="modal__form--label"
+            >Phone Number <span class="primary-color">*</span></label
+          >
+          <input
+            id="phone"
+            type="number"
+            class="modal__form--input"
+            required
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <div>
+          <label for="age" class="modal__form--label"
+            >Age <span class="primary-color">*</span></label
+          >
+          <input
+            id="age"
+            type="number"
+            class="modal__form--input"
+            required
+            placeholder="Enter your age"
+          />
+        </div>
+        <div class="modal__form--email">
+          <label for="email" class="modal__form--label"
+            >Email <span class="primary-color">*</span></label
+          >
+          <input
+            id="email"
+            type="email"
+            class="modal__form--input"
+            required
+            placeholder="Enter your email address"
+          />
+        </div>
+        <div class="modal__form--address">
+          <label for="Address" class="modal__form--label"
+            >Address <span class="primary-color">*</span></label
+          >
+          <input
+            id="Address"
+            type="text"
+            class="modal__form--input"
+            required
+            placeholder="Enter your street address"
+          />
+        </div>
+        <div>
+          <label for="city" class="modal__form--label"
+            >City <span class="primary-color">*</span></label
+          >
+          <input
+            id="city"
+            type="text"
+            class="modal__form--input"
+            required
+            placeholder="Enter your city"
+          />
+        </div>
+        <div>
+          <label for="zip" class="modal__form--label"
+            >Zip Code <span class="primary-color">*</span></label
+          >
+          <input
+            id="zip"
+            type="text"
+            class="modal__form--input"
+            required
+            placeholder="Enter your zip code"
+          />
+        </div>
+        <div class="modal__checkbox">
+          <input type="checkbox" />
+          <span class="modal__checkbox--text"
+            >Please send me latest news and updates</span
+          >
+        </div>
+      </form>
+      <div class="modal__btn--box">
+        <button type="submit" class="btn btn-primary modal__btn">
+          Reserve Now
+        </button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

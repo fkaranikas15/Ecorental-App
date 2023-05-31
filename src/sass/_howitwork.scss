@@ -1,0 +1,19 @@
+.section--how {
+  margin-top: 15rem;
+  text-align: center;
+}
+
+.guides {
+  display: grid;
+  margin-top: 9rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 6rem;
+  row-gap: 6rem;
+}
+
+.guide {
+  &__text {
+    font-size: 1.8rem;
+    color: var(--color-grey-dark-2);
+  }
+}

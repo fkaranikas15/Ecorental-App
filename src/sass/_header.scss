@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  padding: 3.6rem 2.4rem;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    display: block;
+    height: 6rem;
+  }
+
+  &__nav {
+    @media only screen and (max-width: $bp-medium) {
+      background-color: rgba(206, 228, 215, 0.95);
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+
+      transform: translateX(100%);
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+
+      transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    &-list {
+      list-style: none;
+      display: flex;
+      gap: 2.4rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        gap: 4rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+        // transition: all 0.8s;
+      }
+    }
+
+    &-link {
+      &,
+      &:link,
+      &:visited {
+        display: inline-block;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--color-grey-dark-1);
+        transition: all 0.2s;
+
+        @media only screen and (max-width: $bp-medium) {
+          font-size: 3.2rem;
+        }
+      }
+      &:active,
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  &__btn-box {
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
+
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  &__menu {
+    position: fixed;
+    right: 2.4rem;
+    z-index: 2000;
+    background-color: var(--color-primary-tint);
+    display: none;
+    align-items: center;
+    padding: 1.8rem;
+    border-radius: 50%;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+    }
+  }
+
+  &__icon {
+    width: 4rem;
+    height: 4rem;
+    fill: var(--color-grey-dark-1);
+    z-index: 1000;
+
+    &--close {
+      display: none;
+    }
+  }
+}
+
+.open {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.close {
+  display: none;
+}

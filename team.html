@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <link rel="shortcut icon" type="image/png" href="src/img/favicon.png" />
+    <script type="module" src="src/js/controller.js"></script>
+    <title>Ecorental || rent a bike</title>
+  </head>
+  <body>
+    <div class="header--container">
+      <header class="header container" id="header">
+        <img
+          src="/src/img/logo.png"
+          alt="Logo of Ecorental"
+          class="header__logo"
+        />
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li><a href="index.html" class="header__nav-link">Home</a></li>
+            <li><a href="about.html" class="header__nav-link">About</a></li>
+            <li>
+              <a href="index.html#section--bikes" class="header__nav-link"
+                >Bikes Models</a
+              >
+            </li>
+            <li>
+              <a
+                href="index.html#section--testimonials"
+                class="header__nav-link"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a href="#header" class="header__nav-link smooth--scroll"
+                >Our Team</a
+              >
+            </li>
+            <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__btn-box">
+          <a href="#" class="header__nav-link">Sign In</a>
+          <a href="#" class="btn btn-primary">Register</a>
+        </div>
+        <div class="header__menu">
+          <svg class="header__icon header__icon--open">
+            <use xlink:href="src/img/sprite.svg#icon-menu"></use>
+          </svg>
+          <svg class="header__icon header__icon--close">
+            <use xlink:href="src/img/sprite.svg#icon-cross"></use>
+          </svg>
+        </div>
+      </header>
+      <div class="container">
+        <h3 class="heading__h3 mb-small mt-large">Team</h3>
+        <h2 class="heading__h2">
+          <a href="index.html" class="header__nav-link">Home</a> / Team
+        </h2>
+      </div>
+    </div>
+
+    <section class="section--team">
+      <div class="card">
+        <div class="card__side card__side--front">
+          <div class="card__picture card__picture--1 mb-medium">&nbsp;</div>
+          <h4 class="heading__h4">Lorenzo Rossi</h4>
+          <div class="card__details">
+            <ul>
+              <li>CEO</li>
+              <li>27 years old</li>
+              <li>4 years experience</li>
+              <li>Born in Italy</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card__side card__side--back">
+          <div class="card__text-box">
+            <h2 class="heading__h2 mb-medium">Some words</h2>
+            <p class="text mb-large">
+              Meet Lorenzo, our passionate CEO with 4 years of industry
+              experience. Born in Italy over 27 years ago, he leads our company
+              with a deep love for cycling. With a visionary mindset, Lorenzo
+              drives our commitment to delivering exceptional bike rental
+              services. Under his guidance, we continue to thrive, providing
+              unforgettable biking experiences for our customers.
+            </p>
+            <a href="tel:123-456-789" class="info mb-small">
+              <svg class="info__icon">
+                <use xlink:href="src/img/sprite.svg#icon-phone"></use>
+              </svg>
+              (456)-123-789
+            </a>
+            <a href="mailto:ecorental@gmail.com" class="info mb-small">
+              <svg class="info__icon">
+                <use xlink:href="src/img/sprite.svg#icon-mail"></use>
+              </svg>
+              lorenzo@gmail.com
+            </a>
+            <a href="#" class="info">
+              <svg class="info__icon">
+                <use xlink:href="src/img/sprite.svg#icon-location"></use>
+              </svg>
+              Napoli , Italy
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__side card__side--front">
+          <div class="card__picture card__picture--2 mb-medium">&nbsp;</div>
+          <h4 class="heading__h4">Friedrich Müller</h4>
+          <div class="card__details">
+            <ul>
+              <li>Community Manager</li>
+              <li>28 years old</li>
+              <li>6 years experience</li>
+              <li>Born in Germany</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card__side card__side--back">
+          <div class="card__text-box">
+            <h2 class="heading__h2 mb-medium">Some words</h2>
+            <p class="text mb-large">
+              Introducing Friedrich, our experienced Community Manager with 6
+              years of expertise. Born in Germany almost 28 years ago, he
+              possesses a deep understanding of the local biking scene. With his
+              passion for community engagement, Friedrich fosters meaningful
+              connections among biking enthusiasts, ensuring a vibrant and
+              inclusive experience for all. His dedication elevates our cycling
+              community to new heights.
+            </p>
+            <a href="tel:123-456-789" class="info mb-small">
+              <svg class="info__icon">
+                <use xlink:href="src/img/sprite.svg#icon-phone"></use>
+              </svg>
+              (789)-123-456
+            </a>
+            <a href="mailto:ecorental@gmail.com" class="info mb-small">
+              <svg class="info__icon">
+                <use xlink:href="src/img/sprite.svg#icon-mail"></use>
+              </svg>
+              friedrich@gmail.com
+            </a>
+            <a href="#" class="info">
+              <svg class="info__icon">
+                <use xlink:href="src/img/sprite.svg#icon-location"></use>
+              </svg>
+              Berlin , Germany
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      Book a bike by getting touch with us
+      <a href="tel:123-456-789">
+        <svg class="cta__icon">
+          <use xlink:href="src/img/sprite.svg#icon-phone"></use>
+        </svg>
+        (123)-456-789</a
+      >
+    </div>
+
+    <footer class="footer container">
+      <div>
+        <h4 class="heading__h4 mb-small">BIKE Rental</h4>
+        <p class="text mb-large">
+          Embrace the freedom of two wheels. Discover new horizons with us. Your
+          unforgettable cycling adventure starts here.
+        </p>
+        <a href="tel:123-456-789" class="info mb-small">
+          <svg class="info__icon">
+            <use xlink:href="src/img/sprite.svg#icon-phone"></use>
+          </svg>
+          (123)-456-789
+        </a>
+        <a href="mailto:ecorental@gmail.com" class="info">
+          <svg class="info__icon">
+            <use xlink:href="src/img/sprite.svg#icon-mail"></use>
+          </svg>
+          ecorental@gmail.com
+        </a>
+      </div>
+      <div>
+        <h4 class="heading__h4 mb-small">COMPANY</h4>
+        <ul class="footer__nav">
+          <li><a href="#header" class="footer__link">Athens</a></li>
+          <li><a href="#header" class="footer__link">Careers</a></li>
+          <li><a href="#header" class="footer__link">Mobile</a></li>
+          <li><a href="#header" class="footer__link">Blog</a></li>
+          <li><a href="#header" class="footer__link">How we work</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="heading__h4 mb-small">WORKING HOURS</h4>
+        <ul class="footer__list">
+          <li>Mon - Fri: 9:00 AM - 9:00PM</li>
+          <li>Sat: 9:00 AM - 7:00PM</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="heading__h4 mb-small">SUBSCRIPTION</h4>
+        <span class="footer__text"
+          >Subscribe your Email address for latest news & updates.</span
+        >
+        <input
+          class="footer__input"
+          type="email"
+          placeholder="Enter Email Address"
+        />
+        <button class="btn btn-primary no-radius footer__btn">Submit</button>
+      </div>
+    </footer>
+  </body>
+</html>

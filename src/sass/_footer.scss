@@ -1,0 +1,67 @@
+.footer {
+  // margin-top: 15rem;
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 10rem;
+  color: var(--color-grey-dark-1);
+
+  @media only screen and (max-width: $bp-smallest) {
+    text-align: center;
+  }
+
+  &__nav,
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: var(--color-grey-dark-1);
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    &:active,
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &__text {
+    display: block;
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.6rem 3.2rem;
+    font-family: inherit;
+    font-size: 1.8rem;
+    border: none;
+    background-color: var(--color-primary-tint);
+    margin-bottom: 1.2rem;
+
+    &::placeholder {
+      font-size: 1.6rem;
+      font-family: inherit;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 75%;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 75%;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.primary-color {
+  color: var(--color-primary);
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.no-radius {
+  border-radius: 0;
+}
+
+.mb-small {
+  margin-bottom: 1.2rem;
+}
+
+.mb-medium {
+  margin-bottom: 2rem;
+}
+
+.mb-large {
+  margin-bottom: 3.2rem;
+}
+.mt-large {
+  margin-top: 3.2rem;
+}
+
+.heading {
+  &__h1 {
+    font-size: 5.4rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  &__h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+  }
+
+  &__h3 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__h4 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.text {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: var(--color-grey-dark-2);
+}

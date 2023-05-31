@@ -1,0 +1,48 @@
+.book--form {
+  padding: 6rem;
+  box-shadow: 0 1.6rem 4rem rgba(0, 0, 0, 0.15);
+  margin-top: 15rem;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  column-gap: 2rem;
+  row-gap: 4rem;
+
+  &__text-box {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: var(--color-primary);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  &__label {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+  &__select,
+  &__date {
+    font-size: 1.4rem;
+    color: var(--color-grey-dark-2);
+    padding: 1.2rem 2.4rem;
+    border: 1px solid currentColor;
+  }
+
+  &__btn {
+    align-self: self-end;
+    height: fit-content;
+  }
+}
